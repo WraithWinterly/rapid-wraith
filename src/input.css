@@ -10,4 +10,23 @@
   .link {
     @apply text-amber-800 hover:text-orange-700 transition-colors;
   }
+
+  .page-section {
+    @apply flex flex-col items-center justify-center;
+  }
+
+  .info-section {
+    @apply flex flex-col items-center my-6 md:w-40;
+  }
+
+  hr {
+    @apply border-slate-600 w-full;
+  }
+
+  h1 {
+    @apply text-amber-900 text-4xl font-bold py-4;
+  }
+  h2 {
+    @apply text-amber-900 text-2xl font-bold py-2;
+  }
 }
