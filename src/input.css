@@ -12,11 +12,15 @@
   }
 
   .page-section {
-    @apply flex flex-col items-center justify-center;
+    @apply flex flex-col items-center justify-center my-8 mx-4 text-center;
   }
 
   .info-section {
-    @apply flex flex-col items-center my-6 md:w-40;
+    @apply flex flex-col items-center my-6 md:w-60;
+  }
+
+  .collpase-button {
+    @apply text-amber-900 border-amber-900 border-2 hover:bg-amber-900 hover:text-white px-10 py-4 transition-colors;
   }
 
   hr {
@@ -29,4 +33,8 @@
   h2 {
     @apply text-amber-900 text-2xl font-bold py-2;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }

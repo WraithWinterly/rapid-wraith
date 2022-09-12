@@ -4,95 +4,219 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous" />
     <title>Rapid Wraith</title>
   </head>
   <body class="transition-none delay-300">
-    <header class="w-full fixed bg-slate-200 gap-3">
+    <header class="w-full fixed bg-slate-200 gap-3 z-10">
       <div class="flex justify-center items-center gap-4">
-        <a class="header-link" href="/menu">menu</a>
-        <a class="header-link" href="/about">about</a>
-        <a class="bg-transparent hover:bg-slate-900 hover:bg-opacity-20 rounded-lg py-3 transition-colors" href="/">
+        <a class="header-link" href="#menu-collaspe-button">menu</a>
+        <a class="header-link" href="#about">about</a>
+        <a class="bg-transparent hover:bg-slate-900 hover:bg-opacity-20 rounded-lg py-3 transition-colors" href="#home">
           <img
             class="w-80 opacity-100 px-2"
             src="https://lh3.googleusercontent.com/uZlzo8Bsee5-SQP3ZmfEDYAiYJgwVvX1fEH9tJMLVHp4P_T3OLMYG28P4_OFrIRCvJ5shBcPooR1tze3uLv7ca4YBvA9WgkZqEvyyz6YKptA0X0DFmGGldbR7p7LA2QPdJOjxBT3fg6ecFUp-2l4kNBsNyxwP5GZ22uVia7deZrKBOJDFtS2vnkK-527ZqUE5fdGq6znTWgXQbj1H4LBQtqUiZmMvlDKwGLq4npVzC9pojwLIE7x8wyYYr26gzp4htOIHmQkek0lPWO0qArypCI7-j_lC0F26HoG-W0YCYcUWRmx1MpOz1acvL96Zg-Nquqog_gAesTv7GYBRtGbc-e2f3tkrW2rAOMaD5accOKLoF1Qis-O9aqmAa3RVfGHw81d_bG0rCcseQ1kfrKsdh9ptqVoLTdr5RYid-anUUBxHdJaIiRMU_sgUnGsly0xRk2AXSkemOZbD4AMxLn-Qi1hjTL-3PNIU6WVSKWS9wn8VgDOCERqMGl2_UAaAvsx6KuIjJbfPMwtoTTqADjdcYliYZZ-sKdoONFKD-KhxUTUYoejhmRzf59G42CQcZOTYt6a3SAW0EXKuXYv0IEI3qYxIvdIJEadI5i3dhjmX-2KnaE0g57o-Abar7LM90NcAxB5bMM-eP4gIfsBFtYaL4vdulWMQrbNJYrBskNR_Hx3ktVRV0f-c2SNoJ86juT-yY-Q-Pm2gybHSF5wJjrkxmztEropHtF9RogmSHzqEt_RbtM4L66Ipz4kZiX6kk5rpku3MnQ561sizhzTRyt0IhGTp843kEyxz1w5GlA_4y4s5gXCjR4ULwomCLQWZ6SJ6o1GFt8xTJ940JWrs61EcfiZS1EuNcg=w594-h124-no?authuser=4" />
         </a>
         <a class="header-link" href="/retail">retail</a>
-        <a class="header-link" href="/why-us">why us?</a>
+        <a class="header-link" href="#whyus">why us?</a>
       </div>
     </header>
 
-    <main class="flex justify-center">
-      <div class="flex flex-col justify-center items-center pt-24 md:max-w-[900px] mx-4">
-        <!-- -------------------------- -->
-        <!-- Web Site Content Goes Here -->
-        <!-- -------------------------- -->
-        <div class="page-section">
-          <h1 class="">Welcome to Rapid Wraith</h1>
+    <div id="home"></div>
+    <main class="flex justify-center items-center flex-col pt-24">
+      <div class="page-section w-full">
+        <h1 class="">Welcome to Rapid Wraith</h1>
+        <img
+          class="h-[600px] mt-8 w-full object-cover object-center"
+          src="https://images.unsplash.com/photo-1496582490020-60c1344c64aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1481&q=80"
+          alt="" />
+      </div>
+
+      <!-- -------------------------- -->
+      <!-- Web Site Content Goes Here -->
+      <!-- -------------------------- -->
+
+      <!-- Who Are We -->
+      <div class="page-section md:max-w-[900px]">
+        <h1>Who are we?</h1>
+        <h2>The coffee shop for those who do not know what they want</h2>
+        <p class="text-xl text-center">
+          Here you are seeing a special coffee shop. Here, you are given a random drink in your price range. We are perfect for those who want to try new
+          blends, or those who may not be able to choose easily. Freshen up your mornings and achieve your goals with this first step of your day!
+        </p>
+      </div>
+
+      <!-- Menu -->
+      <div class="page-section w-full">
+        <button
+          class="collpase-button my-10 scroll-mt-40"
+          type="button"
+          role="button"
+          data-bs-toggle="collapse"
+          href="#menu-collapse"
+          aria-expanded="false"
+          aria-controls="menu-collpase"
+          id="menu-collaspe-button">
+          View Menu
+        </button>
+        <div class="collapse w-full flex justify-center" id="menu-collapse">
           <img
-            class="h-72 my-4 w-full object-cover object-center"
-            src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            class="rounded-2xl object-cover object-top md:w-[700px] md: h-[800px] lg:w-[900px]"
+            src="https://images.unsplash.com/photo-1557500187-2040fe7fd04e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
             alt="" />
-
-          <h1>Who are we?</h1>
-          <h2>The restaurant for those who do not know what they want</h2>
-          <p class="text-xl text-center">
-            Here you are seeing a special restaurant. Here, you are given a random meal in your price range. This restaurant is perfect for those who want to
-            try new foods, or those who may not be able to choose easily.
-          </p>
         </div>
+      </div>
 
-        <!-- Information -->
-        <div class="page-section w-full mt-4">
-          <div class="grid-cols-1 md:flex md:justify-between w-full">
-            <!-- Info Section -->
-            <div class="info-section">
-              <h1 class="text-xl pb-4">Location</h1>
-              <p class="text-slate-700">123 Test St.</p>
-              <p class="text-slate-700">Ellsworth, Maine</p>
-            </div>
+      <!-- Information -->
+      <div class="page-section md:max-w-[900px]">
+        <div class="grid-cols-1 md:flex md:justify-between w-full">
+          <!-- Info Section -->
+          <div class="info-section">
+            <h1 class="text-xl pb-4">Location</h1>
+            <p class="text-slate-700">123 Test St.</p>
+            <p class="text-slate-700">Ellsworth, Maine</p>
+          </div>
 
-            <div class="info-section">
-              <h1 class="text-xl pb-4">Hours</h1>
-              <p class="text-slate-700">8am to 5pm - All Days</p>
-              <p class="text-slate-700">Closed Sundays</p>
-            </div>
-            <div class="info-section">
-              <h1 class="text-xl pb-4">Contact</h1>
-              <a class="link" href="tel:2074444444">(207) 444-4444</a>
-              <a class="link" href="mailto:rapidwraith@gmail.com"> rapidwraith@gmail.com </a>
-            </div>
+          <div class="info-section">
+            <h1 class="text-xl pb-4">Hours</h1>
+            <p class="text-slate-700">8am to 5pm Monday-Saturday</p>
+            <p class="text-slate-700">Closed Sundays</p>
+          </div>
+          <div class="info-section">
+            <h1 class="text-xl pb-4">Contact</h1>
+            <a class="link" href="tel:2074444444">(207) 444-4444</a>
+            <a class="link" href="mailto:rapidwraith@gmail.com"> rapidwraith@gmail.com </a>
           </div>
         </div>
+      </div>
 
-        <!-- Food Print -->
-        <div class="page-section">
-          <hr class="my-8" />
-          <img
-            class="w-52"
-            src="https://images.squarespace-cdn.com/content/v1/5c42b91c697a9873ebf844b8/1609787073062-88E5P38MXHSFU0DQC333/ZeroFoodprint.Logo.2020_Deep_Cyan.png?format=300w"
-            alt="" />
-          <h2 class="text-xl py-4">
-            We are part of
-            <a class="link" href="https://www.zerofoodprint.org/">Zero Foodprint</a>.
-          </h2>
-          <p class="w-3/4 text-center">
-            Your final bill includes a 1% ZFP Restore the Planet fee, to help restore the Earth and improve climate change. You may remove this at your request.
-          </p>
-          <hr class="border-slate-600 border-1 w-full my-8" />
-        </div>
+      <!-- Food Print -->
+      <div class="page-section">
+        <hr class="mb-8" />
+        <img
+          class="w-52"
+          src="https://images.squarespace-cdn.com/content/v1/5c42b91c697a9873ebf844b8/1609787073062-88E5P38MXHSFU0DQC333/ZeroFoodprint.Logo.2020_Deep_Cyan.png?format=300w"
+          alt="" />
+        <h2 class="text-xl py-4">
+          We are part of
+          <a class="link" href="https://www.zerofoodprint.org/">Zero Foodprint</a>.
+        </h2>
+        <p class="w-3/4">
+          Your final bill includes a 1% ZFP Restore the Planet fee, to help restore the Earth and improve climate change. You may remove this at your request.
+        </p>
+        <hr class="mt-8" />
+      </div>
 
-        <!-- About Section -->
-        <div class="page-section">
-          <h1>About</h1>
-          <p class="text-lg w-3/4 text-center">
-            Since the beginning, there was always been confusion about what to eat. It is tough for people to find new foods that they enjoy. That is why, here,
-            at Rapid Wraith, you will be served a random meal from our entry. However, you may opt out of this and order from the menu.
-          </p>
+      <div class="w-full">
+        <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+          <!-- Carousel Indicator Buttons -->
+          <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <!-- Carousel Content -->
+          <div class="carousel-inner relative w-full overflow-hidden">
+            <!-- Carousel Card One -->
+            <div class="carousel-item active relative float-left w-full">
+              <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%">
+                <img
+                  src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
+                  class="block w-full object-cover h-[600px]" />
+                <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black opacity-20"></div>
+              </div>
+              <div class="carousel-caption hidden md:block absolute text-center mb-4">
+                <h5 class="text-xl">The Standard Latte</h5>
+                <p>Feel the burst of energy while drinking this warm latte.</p>
+              </div>
+            </div>
+
+            <!-- Carousel Card Two -->
+            <div class="carousel-item relative float-left w-full">
+              <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%">
+                <img
+                  src="https://images.unsplash.com/photo-1543574687-5209713c0e80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                  class="block w-full object-cover h-[600px]" />
+                <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black opacity-20"></div>
+              </div>
+              <div class="carousel-caption hidden md:block absolute text-center mb-4">
+                <h5 class="text-xl">Fruit Tea</h5>
+                <p>You have never tasted this before.</p>
+              </div>
+            </div>
+
+            <!-- Carousel Card Three -->
+            <div class="carousel-item relative float-left w-full">
+              <div class="relative overflow-hidden bg-no-repeat bg-cover" style="background-position: 50%">
+                <img
+                  src="https://images.unsplash.com/photo-1525391832543-432b7e058cb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                  class="block w-full object-cover h-[600px]" />
+                <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black opacity-20"></div>
+              </div>
+              <div class="carousel-caption hidden md:block absolute text-center mb-4">
+                <h5 class="text-xl">The Rapid Expresso</h5>
+                <p>Freshen up your mornings now!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left Button -->
+          <button
+            class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <!-- Right Button -->
+          <button
+            class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+      </div>
+
+      <!-- About Section -->
+      <div class="page-section scroll-my-2" id="about">
+        <h1>About</h1>
+        <p class="text-lg w-3/4">
+          Since the beginning, there has always been confusion about what to eat. It is tough for people to find new foods that they enjoy. That is why, here,
+          at Rapid Wraith, you will be served a random meal from our entry. However, you may opt out of this and order from the menu.
+        </p>
+      </div>
+
+      <!-- Why Us Section -->
+      <div class="page-section scroll-my-2" id="whyus">
+        <h1>Why Us?</h1>
+        <p class="text-lg w-3/4">
+          We are a quality first restaurant, only supplying the best ingredientes and consumer experience. Here, the waiting time is kept to a minimum, and the
+          customer experience is first.
+        </p>
       </div>
     </main>
 
     <script type="module" src="/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+      type="module"></script>
   </body>
 </html>
