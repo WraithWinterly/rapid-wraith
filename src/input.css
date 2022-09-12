@@ -4,7 +4,7 @@
 
 @layer components {
   .header-link {
-    @apply text-amber-800 hover:text-orange-700 text-lg drop-shadow-xl font-bold transition-colors;
+    @apply text-white hover:text-slate-300 text-lg drop-shadow-xl font-bold transition-colors hidden md:inline-block;
   }
 
   .link {
