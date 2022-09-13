@@ -5,7 +5,7 @@ module.exports = {
     extend: {},
     mode: "jit",
     screens: {
-      sm: "640px",
+      sm: "0px",
       // => @media (min-width: 640px) { ... }
 
       md: "768px",

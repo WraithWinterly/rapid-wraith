@@ -12,24 +12,56 @@
       crossorigin="anonymous" />
     <title>Rapid Wraith</title>
   </head>
-  <body class="transition-none delay-300 relative min-h-screen">
+  <body class="transition-none delay-300 relative min-h-screen min-w-screen">
     <header class="w-full fixed bg-amber-800 gap-3 z-10">
-      <div class="flex justify-between px-4 md:px-0 w-full md:justify-center items-center gap-4">
-        <a class="header-link" href="#menu-collaspe-button">menu</a>
-        <a class="header-link" href="#about">hours</a>
+      <!-- Desktop Header -->
+      <div class="hidden md:flex justify-center px-4 md:px-0 w-full items-center gap-4">
+        <div class="w-40 flex gap-4 justify-end">
+          <a class="header-link" href="#menu-collaspe-button">menu</a>
+          <a class="header-link" href="#about">hours</a>
+        </div>
         <a
           class="bg-transparent hover:bg-slate-900 hover:bg-opacity-20 rounded-lg py-1 transition-colors"
           href="https://wraithwinterly.github.com/rapid-wraith">
           <img class="w-60 opacity-100 px-2 rounded-[20px]" src="/rapidwraith.png" />
         </a>
-        <button>
+        <div class="w-40 flex gap-4">
+          <a class="header-link" href="#home">home</a>
+          <a class="header-link" href="#whyus">why us?</a>
+        </div>
+      </div>
+
+      <!-- Mobile Header -->
+      <div class="flex md:hidden justify-between px-4 w-full items-center gap-4">
+        <a
+          class="bg-transparent hover:bg-slate-900 hover:bg-opacity-20 rounded-lg py-1 transition-colors"
+          href="https://wraithwinterly.github.com/rapid-wraith">
+          <img class="w-60 opacity-100 px-2 rounded-[20px]" src="/rapidwraith.png" />
+        </a>
+        <button type="button"
+          role="button"
+          data-bs-toggle="collapse"
+          href="#header-collaspe"
+          aria-expanded="false"
+          aria-controls="menu-collpase"
+          id="header-collaspe-button">
           <svg class="md:hidden" height="32" width="32" viewBox="0 0 24 24">
             <path d="M0 0h24v24H0z" fill="none" />
             <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
           </svg>
         </button>
-        <a class="header-link" href="#home">home</a>
-        <a class="header-link" href="#whyus">why us?</a>
+
+        </div>
+        <!-- Collapsable -->
+        <div class="collapse w-full flex justify-center md:hidden" id="header-collaspe">
+          <div class="w-full flex justify-center items-center gap-4 h-16">
+            <a class="header-link js-header-mobile-link" href="#menu-collaspe-button">menu</a>
+            <a class="header-link js-header-mobile-link" href="#about">hours</a>
+            <a class="header-link js-header-mobile-link" href="#home">home</a>
+            <a class="header-link js-header-mobile-link" href="#whyus">why us?</a>
+          </div>
+
+        </div>
       </div>
     </header>
 
@@ -217,11 +249,11 @@
         <hr class="mt-8" />
       </div>
 
-      <div class="h-60"></div>
+      <div class="sm:h-72 md:h-40"></div>
     </main>
 
-    <footer class="absolute bottom-0 w-full h-32 bg-amber-900 text-white">
-      <div class="flex justify-center items-center h-full text-center gap-10">
+    <footer class="absolute bottom-0 w-full sm:h-60 md:h-32 bg-amber-900 text-white">
+      <div class="flex flex-col md:flex-row justify-center items-center h-full text-center sm:gap-6 md:gap-12 ">
         <div class="w-40">
           <p class="font-bold">Rapid Wraith Cafe</p>
           <p class="italic">The most unique cafe in the world.</p>
