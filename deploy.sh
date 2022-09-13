@@ -6,7 +6,7 @@
 # $ git push -u origin main
 
 # module.exports = {
-#   base: "/rapid-wraith",
+#   base: "/rapid-wraith/",
 #   build: {
 #     outDir: "../dist",
 #   },
